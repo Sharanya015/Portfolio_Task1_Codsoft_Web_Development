@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <title> Personal Portfile Website </title>
+     <link rel="stylesheet" href="style.css">
+     <script src="https://kit.fontawesome.com/8a7945de71.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id ="header">
+        <nav>
+            <img src="images/logo.png.jpeg" class="logo">
+            <ul id="sidemenu"> 
+                <li> <a href="#header"> Home </a></li>
+                <li> <a href="#about"> About </a></li>
+                <li> <a href="#skills"> Skills </a></li>
+                <li> <a href="#portfolio"> Portfolio </a></li>
+                <li> <a href="#contact"> Contact </a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul> 
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1> Hello It's me<span>Sharanya </span><br>
+            I'am <br><span> Full Stack Developer</span></h1>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pic.png.jpeg">
+                </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p> Hello Everyone Myself Sharanya. This is my Official Website to showcase my experiences, skills.
+                            I'am a Full Stack Developer from Hyderabad, I'am skilled and very passinate in creating visually appearing
+                            and user-friendly Website
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')"> Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')"> Educations</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul> 
+                                <li> <span> Technical Skills </span> <br> Python, Java, HTML, CSS </li>
+                                <li> <span> Professional Skills </span> <br> Communication skills, Team work,<br> Problem solving.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul> 
+                                <li> <span> Technical Writing </span> <br> Research Oriented Technical Writing</li>
+                                <li> <span> Aws certification </span><br> Aws cloud Practioner Essentials <br></li>
+                                <li> <span> Internship</span><br>Intern as full stack Development at <br>Bharat Intern </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul> 
+                                <li> <span> School</span> <br> Vikas high School</li>
+                                <li> <span> Intermediate</span> <br>Master Minds junior college</li>
+                                <li> <span> B.Tech</span> <br> St.Peters Engineering College</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="services">
+        <div class="container"> 
+            <h1 class="sub-title">Skills</h1>
+            <div class="services-list"> 
+                <div> 
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Technical skills</h2>
+                    <p> Python, Java, HTML, CSS </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div> 
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Professional Skills</h2>
+                    <p>Communication skills, Team work, Problem solving</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div> 
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2> Internship</h2>
+                    <p> Intern as full stack Development at Bharat Intern </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio"> 
+        <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+            <div class="work-list">
+                <div class="work"> 
+                    
+                    <div class="layer">
+                        <img src="images/certificate1.png.jpeg">
+                        <h3> Technical Writing </h3>
+                        <p> Research Oriented Technical Writing </p>
+                        <a href="#"> <i class="fa-solid fa-up-right-from-square"></i> </a>
+                    </div>
+                </div>
+                <div class="work"> 
+                    
+                    <div class="layer">
+                        <img src="images/certificate2.png.jpeg">
+                        <h3> Aws certification </h3>
+                        <p> Aws cloud Practioner Essentials </p>
+                        <a href="#"> <i class="fa-solid fa-up-right-from-square"></i> </a>
+                    </div>
+                </div>
+                <div class="work"> 
+                    <img src="images/certificate3.png.jpeg">
+                    <div class="layer">
+                        <img src="images/certificate3.png.jpeg">
+                        <h3> Internship </h3>
+                        <p> Intern as full stack Development at Bharat Intern  </p>
+                        <a href="#"> <i class="fa-solid fa-up-right-from-square"></i> </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane fa-beat-fade"></i>sharanyapeddi@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume fa-beat"></i> enter mobile no :- **********</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram fa-beat" style="color: social-iconssocial-icons;"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook fa-beat" style="color: #ababab;"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square fa-beat" style="color: #ababab;"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin fa-beat" style="color: #ababab;"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV </a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"> Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright © Kelvin. Made with <i class="fa-solid fa-heart"></i> by Easy Totorials </p>
+     </div>
+    <script>
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontents =document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script> 
+        var sidemeu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+    </script>
+</body>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxEotLp_GnfCD155kVgoxcJYHQBzddLNYz7x8zaREvizIXSS2vruzMWylq8utYEq2I1/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+</html>
